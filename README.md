@@ -21,11 +21,11 @@
 2. Data exploration is carried out using **PySpark SQL functions**.
 3. **matplotlib** and **seaborn** are then used to visualize the data and support Feature Selection.
 4. After Feature Selection, data is passed through **PySpark Machine Learning Pipelines**, each of which contains the following stages:
-  - **StringIndexer**: Indexing categorical features
-  - **OneHotEncoder**: Encoding the categorical features
-  - **VectorAssembler**: Assemble the features (both numerical and categorical) into one single Feature column
-  - **StandardScaler**: Scale the Feature column
-  - Machine Learning models: Either Decision Tree (**DecisionTreeClassifier**) or Gradient Boosted Tree (**GBTClassifier**).
+    - **StringIndexer**: Indexing categorical features
+    - **OneHotEncoder**: Encoding the categorical features
+    - **VectorAssembler**: Assemble the features (both numerical and categorical) into one single Feature column
+    - **StandardScaler**: Scale the Feature column
+    - Machine Learning models: Either Decision Tree (**DecisionTreeClassifier**) or Gradient Boosted Tree (**GBTClassifier**).
 5. The pipelines are used to process data then train and evaluate the Machine Learning models.
 6. Models are evaluated by their Accuracy, Precision, Recall, F1-Score, and AUC score and ROC curve.
 
